@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Repo Assistant",
+  "version": "1.0",
+  "description": "AI-powered RAG assistant for GitHub repositories, powered by Gemini & ChromaDB.",
+  "permissions": [
+    "activeTab",
+    "sidePanel",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://github.com/*",
+    "http://localhost:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open Repo Assistant"
+  }
+}

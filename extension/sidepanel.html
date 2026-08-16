@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Repo Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="brand">
+      <span class="brand-icon">&gt;_</span>
+      <span>Repo Assistant</span>
+    </div>
+    <div id="statusPill" class="status-pill status-empty">
+      <span class="status-dot"></span>
+      <span id="statusText">No repo loaded</span>
+    </div>
+  </header>
+
+  <!-- Repo Target Bar -->
+  <section class="repo-bar">
+    <div class="repo-input-group">
+      <input type="text" id="repoUrlInput" placeholder="https://github.com/user/repo" />
+      <button id="ingestBtn" class="btn-primary">Ingest</button>
+    </div>
+  </section>
+
+  <!-- Chat Area -->
+  <main id="chatContainer" class="chat-container">
+    <div id="emptyState" class="empty-state">
+      <div class="empty-mark">&gt;_</div>
+      <p>Navigate to a GitHub repository page or paste a URL above and click <b>Ingest</b> to start chatting!</p>
+    </div>
+  </main>
+
+  <!-- Input Bar -->
+  <footer class="footer-input">
+    <input type="text" id="queryInput" placeholder="Ask a question about this repository..." disabled />
+    <button id="sendBtn" class="btn-primary" disabled>Send</button>
+  </footer>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+backend/.env
+backend/chroma_db/
+backend/temp_repo/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
